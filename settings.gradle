@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'GLDailyCode'
-include('app')
+include('code')
