@@ -1,6 +1,6 @@
 # GLDailyCode
 
-日常 LeetCode 刷题记录，共 **23** 题。
+日常 LeetCode 刷题记录，共 **24** 题。
 
 | 分类 | 题目 | 实现 | 题解 |
 | --- | --- | --- | --- |
@@ -25,6 +25,7 @@
 | Queue | [#225 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/) | [Leetcode_225.java](code/src/main/java/gldailycode/queue/Leetcode_225.java) | [题解](solutions/queue/Leetcode-225-用队列实现栈.md) |
 | 前缀和 | [#303 区域和检索](https://leetcode.cn/problems/range-sum-query-immutable/) | [Leetcode_303.java](code/src/main/java/gldailycode/prefix_sum/Leetcode_303.java) | [题解](solutions/prefix_sum/Leetcode-303-区域和检索.md) |
 | Greedy | [#455 分发饼干](https://leetcode.cn/problems/assign-cookies/) | [Leetcode_455.java](code/src/main/java/gldailycode/greedy/Leetcode_455.java) | [题解](solutions/greedy/Leetcode-455-分发饼干.md) |
+| 二分 | [#33 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [Leetcode_33.java](code/src/main/java/gldailycode/binary_search/Leetcode_33.java) | [题解](solutions/binary_search/Leetcode-33-搜索旋转排序数组.md) |
 | 二分 | [#704 二分查找](https://leetcode.cn/problems/binary-search/) | [Leetcode_704.java](code/src/main/java/gldailycode/binary_search/Leetcode_704.java) | [题解](solutions/binary_search/Leetcode-704-二分查找.md) |
 | 单调栈 | [#739 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [Leetcode_739.java](code/src/main/java/gldailycode/stack/Leetcode_739.java) | [题解](solutions/stack/Leetcode-739-每日温度.md) |
 

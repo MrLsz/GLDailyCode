@@ -1,7 +1,6 @@
 package gldailycode.dp;
 
 public class Leetcode_121 {
-    // 解法一：贪心（一次遍历，维护历史最低价）
     public int maxProfit(int[] prices) {
         if (prices == null || prices.length <= 1) {
             return 0;
@@ -19,14 +18,13 @@ public class Leetcode_121 {
         return resultValue;
     }
 
-    // 解法二：DP（状态机）
     public int maxProfit1(int[] prices) {
         // dp[i][0] 表示第i天持有股票的收益
         // dp[i][1] 表示第i天不持有股票的收益
-
+        
         int[][] dp = new int[prices.length][2];
         dp[0][0] = -prices[0];
-
+        
         // dp[i][0] = Math.max(dp[i - 1][0], -prices[i]);
         // dp[i][1] = Math.max(dp[i - 1][1], prices[i] + dp[i - 1][0]);
 

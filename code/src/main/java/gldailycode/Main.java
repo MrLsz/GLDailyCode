@@ -4,6 +4,7 @@
 package gldailycode;
 
 import gldailycode.backtrack.Leetcode_78;
+import gldailycode.binary_search.Leetcode_33;
 
 public class Main {
     public String getGreeting() {
@@ -11,7 +12,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Leetcode_78 leetcode78 = new Leetcode_78();
-        leetcode78.subsets(new int[]{1, 2, 3});
+
+        Leetcode_33 leetcode33 = new Leetcode_33();
+        leetcode33.search(new int[]{1,3}, 3);
     }
 }
