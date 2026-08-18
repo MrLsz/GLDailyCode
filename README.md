@@ -24,3 +24,9 @@
 | Greedy | [#455 分发饼干](https://leetcode.cn/problems/assign-cookies/) | [Leetcode_455.java](code/src/main/java/gldailycode/greedy/Leetcode_455.java) | [题解](solutions/greedy/Leetcode-455-分发饼干.md) |
 | 二分 | [#704 二分查找](https://leetcode.cn/problems/binary-search/) | [Leetcode_704.java](code/src/main/java/gldailycode/binary_search/Leetcode_704.java) | [题解](solutions/binary_search/Leetcode-704-二分查找.md) |
 | 单调栈 | [#739 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [Leetcode_739.java](code/src/main/java/gldailycode/stack/Leetcode_739.java) | [题解](solutions/stack/Leetcode-739-每日温度.md) |
+
+## 总结文章
+
+| 分类 | 文章 | 说明 |
+| --- | --- | --- |
+| DP | [动态规划总结](solutions/dp/动态规划总结.md) | 01 背包与完全背包的写法对比总结 |
