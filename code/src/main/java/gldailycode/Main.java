@@ -3,12 +3,15 @@
  */
 package gldailycode;
 
+import gldailycode.backtrack.Leetcode_78;
+
 public class Main {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new Main().getGreeting());
+        Leetcode_78 leetcode78 = new Leetcode_78();
+        leetcode78.subsets(new int[]{1, 2, 3});
     }
 }
