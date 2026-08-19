@@ -3,42 +3,53 @@ package gldailycode.hash;
 import java.util.HashMap;
 
 public class Leetcode_146 {
-    private HashMap<Integer, Node> hashMap;
-    private Node headNode;   // 虚拟头节点
-    private Node lastNode;   // 虚拟尾节点
-    private int capacity;
+}
+class Node {
+    public int key = 0;
+    public int value = 0;
+    public Node nextNode = null;
+     public Node preNode = null;
+     public Node(int key, int value) {
+        this.key = key;
+        this.value = value;
+     }
 
-    public Leetcode_146(int capacity) {
+}
+class LRUCache {
+
+    public HashMap<Integer, Node> hashMap = null;
+    public Node headNode = null;
+    public Node lastNode = null;
+    public int capacity = 0;
+    public LRUCache(int capacity) {
         this.capacity = capacity;
         this.hashMap = new HashMap<>();
-        this.headNode = new Node(0, 0);
-        this.lastNode = new Node(0, 0);
+        this.headNode = new Node(0,0);
+        this.lastNode = new Node(0,0);
         headNode.nextNode = lastNode;
         lastNode.preNode = headNode;
     }
-
+    
     public int get(int key) {
         if (!hashMap.containsKey(key)) {
             return -1;
         }
 
-        Node curNode = hashMap.get(key);
-        this.moveToHead(curNode);
-        return curNode.value;
+       Node curNode = hashMap.get(key);
+       this.moveToHead(curNode);
+       return curNode.value;
     }
 
-    public void moveToHead(Node curNode) {
-        // 1. 从原位置摘除
+    public void moveToHead(Node curNode) { 
         curNode.preNode.nextNode = curNode.nextNode;
         curNode.nextNode.preNode = curNode.preNode;
 
-        // 2. 插入头部
         curNode.nextNode = headNode.nextNode;
-        curNode.nextNode.preNode = curNode;   // 修复：原首节点的 preNode 指向 curNode
-        headNode.nextNode = curNode;
+        curNode.nextNode.preNode = curNode;
         curNode.preNode = headNode;
+        headNode.nextNode = curNode;
     }
-
+    
     public void put(int key, int value) {
         if (this.capacity <= 0) {
             return;
@@ -55,13 +66,13 @@ public class Leetcode_146 {
             this.removeLast();
         }
 
-        // 新节点直接插入头部
         Node curNode = new Node(key, value);
-        curNode.nextNode = headNode.nextNode;
-        curNode.nextNode.preNode = curNode;
-        headNode.nextNode = curNode;
-        curNode.preNode = headNode;
+        curNode.preNode = lastNode.preNode;
+        curNode.nextNode = lastNode;
+        lastNode.preNode.nextNode = curNode;
+        lastNode.preNode = curNode;
         hashMap.put(key, curNode);
+        this.moveToHead(curNode);
     }
 
     public void removeLast() {
@@ -69,21 +80,9 @@ public class Leetcode_146 {
             return;
         }
 
-        Node tailNode = lastNode.preNode;   // 最后一个真实节点（最久未使用）
-        tailNode.preNode.nextNode = lastNode;
-        lastNode.preNode = tailNode.preNode;
-        hashMap.remove(tailNode.key);
-    }
-}
-
-class Node {
-    public int key;
-    public int value;
-    public Node nextNode;
-    public Node preNode;
-
-    public Node(int key, int value) {
-        this.key = key;
-        this.value = value;
+        Node preNode = lastNode.preNode;
+        preNode.preNode.nextNode = lastNode;
+        lastNode.preNode = preNode.preNode;
+        hashMap.remove(preNode.key);
     }
 }

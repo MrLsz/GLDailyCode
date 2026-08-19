@@ -1,11 +1,12 @@
 # GLDailyCode
 
-日常 LeetCode 刷题记录，共 **26** 题。
+日常 LeetCode 刷题记录，共 **27** 题。
 
 | 分类 | 题目 | 实现 | 题解 |
 | --- | --- | --- | --- |
 | Hash | [#1 两数之和](https://leetcode.cn/problems/two-sum/) | [Leetcode_1.java](code/src/main/java/gldailycode/hash/Leetcode_1.java) | [题解](solutions/hash/Leetcode-1-两数之和.md) |
 | Hash | [#146 LRU 缓存](https://leetcode.cn/problems/lru-cache/) | [Leetcode_146.java](code/src/main/java/gldailycode/hash/Leetcode_146.java) | [题解](solutions/hash/Leetcode-146-LRU缓存.md) |
+| 滑动窗口 | [#3 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) | [Leetcode_3.java](code/src/main/java/gldailycode/string/Leetcode_3.java) | [题解](solutions/string/Leetcode-3-无重复字符的最长子串.md) |
 | 双指针 | [#11 盛水容器](https://leetcode.cn/problems/container-with-most-water/) | [Leetcode_11.java](code/src/main/java/gldailycode/double_point/Leetcode_11.java) | [题解](solutions/double_point/Leetcode-11-盛水容器.md) |
 | 双指针 | [#141 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [Leetcode_141.java](code/src/main/java/gldailycode/double_point/Leetcode_141.java) | [题解](solutions/double_point/Leetcode-141-环形链表.md) |
 | 双指针 | [#344 反转字符串](https://leetcode.cn/problems/reverse-string/) | [Leetcode_344.java](code/src/main/java/gldailycode/double_point/Leetcode_344.java) | [题解](solutions/double_point/Leetcode-344-反转字符串.md) |
