@@ -3,8 +3,86 @@
  */
 package gldailycode;
 
+import java.util.HashMap;
+
 import gldailycode.backtrack.Leetcode_78;
 import gldailycode.binary_search.Leetcode_33;
+import gldailycode.hash.Leetcode_246;
+
+class Node {
+    public int value = 0;
+    public Node nextNode = null;
+     public Node preNode = null;
+     public Node(int value) {
+         this.value = value;
+     }
+
+}
+class LRUCache {
+
+    public HashMap<Integer, Node> hashMap = null;
+    public Node headNode = null;
+    public Node lastNode = null;
+    public int capacity = 0;
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+        this.hashMap = new HashMap<>(capacity);
+        this.headNode = new Node(0);
+        this.lastNode = new Node(0);
+        headNode.nextNode = lastNode;
+        lastNode.preNode = headNode;
+    }
+    
+    public int get(int key) {
+        if (!hashMap.containsKey(key)) {
+            return -1;
+        }
+
+       Node curNode = hashMap.get(key);
+       this.moveToHead(curNode);
+       return curNode.value;
+    }
+
+    public void moveToHead(Node curNode) { 
+        curNode.preNode.nextNode = curNode.nextNode;
+        curNode.nextNode.preNode = curNode.preNode;
+
+        curNode.nextNode = headNode.nextNode;
+        curNode.preNode = headNode;
+        headNode.nextNode = curNode;
+    }
+    
+    public void put(int key, int value) {
+        if (hashMap.containsKey(key)) {
+            Node curNode = hashMap.get(key);
+            curNode.value = value;
+            this.moveToHead(curNode);
+            return;
+        }
+
+        if (hashMap.size() == this.capacity) {
+            this.removeLast();
+        }
+
+        Node curNode = new Node(value);
+        curNode.preNode = lastNode.preNode;
+        curNode.nextNode = lastNode;
+        hashMap.put(key, curNode);
+        lastNode.preNode.nextNode = curNode;
+        lastNode.preNode = curNode;
+        this.moveToHead(curNode);
+    }
+
+    public void removeLast() {
+        if (hashMap.isEmpty()) {
+            return;
+        }
+
+        Node preNode = lastNode.preNode;
+        preNode.preNode.nextNode = lastNode;
+        lastNode.preNode = preNode.preNode;
+    }
+}
 
 public class Main {
     public String getGreeting() {
@@ -12,8 +90,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
-        Leetcode_33 leetcode33 = new Leetcode_33();
-        leetcode33.search(new int[]{1,3}, 3);
+        LRUCache lruCache = new LRUCache(2);
+        lruCache.put(1,1);
+        lruCache.put(2, 2);
+        lruCache.get(1);
     }
 }

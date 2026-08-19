@@ -1,10 +1,11 @@
 # GLDailyCode
 
-日常 LeetCode 刷题记录，共 **24** 题。
+日常 LeetCode 刷题记录，共 **26** 题。
 
 | 分类 | 题目 | 实现 | 题解 |
 | --- | --- | --- | --- |
 | Hash | [#1 两数之和](https://leetcode.cn/problems/two-sum/) | [Leetcode_1.java](code/src/main/java/gldailycode/hash/Leetcode_1.java) | [题解](solutions/hash/Leetcode-1-两数之和.md) |
+| Hash | [#146 LRU 缓存](https://leetcode.cn/problems/lru-cache/) | [Leetcode_146.java](code/src/main/java/gldailycode/hash/Leetcode_146.java) | [题解](solutions/hash/Leetcode-146-LRU缓存.md) |
 | 双指针 | [#11 盛水容器](https://leetcode.cn/problems/container-with-most-water/) | [Leetcode_11.java](code/src/main/java/gldailycode/double_point/Leetcode_11.java) | [题解](solutions/double_point/Leetcode-11-盛水容器.md) |
 | 双指针 | [#141 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [Leetcode_141.java](code/src/main/java/gldailycode/double_point/Leetcode_141.java) | [题解](solutions/double_point/Leetcode-141-环形链表.md) |
 | 双指针 | [#344 反转字符串](https://leetcode.cn/problems/reverse-string/) | [Leetcode_344.java](code/src/main/java/gldailycode/double_point/Leetcode_344.java) | [题解](solutions/double_point/Leetcode-344-反转字符串.md) |
@@ -23,6 +24,7 @@
 | DFS/BFS | [#200 岛屿数量](https://leetcode.cn/problems/number-of-islands/) | [Leetcode_200.java](code/src/main/java/gldailycode/dfs_bfs/Leetcode_200.java) | [题解](solutions/dfs_bfs/Leetcode-200-岛屿数量.md) |
 | 堆 | [#215 第K大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | [Leetcode_215.java](code/src/main/java/gldailycode/heap/Leetcode_215.java) | [题解](solutions/heap/Leetcode-215-第K大元素.md) |
 | Queue | [#225 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/) | [Leetcode_225.java](code/src/main/java/gldailycode/queue/Leetcode_225.java) | [题解](solutions/queue/Leetcode-225-用队列实现栈.md) |
+| Queue | [#232 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/) | [Leetcode_232.java](code/src/main/java/gldailycode/queue/Leetcode_232.java) | [题解](solutions/queue/Leetcode-232-用栈实现队列.md) |
 | 前缀和 | [#303 区域和检索](https://leetcode.cn/problems/range-sum-query-immutable/) | [Leetcode_303.java](code/src/main/java/gldailycode/prefix_sum/Leetcode_303.java) | [题解](solutions/prefix_sum/Leetcode-303-区域和检索.md) |
 | Greedy | [#455 分发饼干](https://leetcode.cn/problems/assign-cookies/) | [Leetcode_455.java](code/src/main/java/gldailycode/greedy/Leetcode_455.java) | [题解](solutions/greedy/Leetcode-455-分发饼干.md) |
 | 二分 | [#33 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [Leetcode_33.java](code/src/main/java/gldailycode/binary_search/Leetcode_33.java) | [题解](solutions/binary_search/Leetcode-33-搜索旋转排序数组.md) |
