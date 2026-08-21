@@ -1,6 +1,6 @@
 # GLDailyCode
 
-日常 LeetCode 刷题记录，共 **27** 题。
+日常 LeetCode 刷题记录，共 **29** 题。
 
 | 分类 | 题目 | 实现 | 题解 |
 | --- | --- | --- | --- |
@@ -12,8 +12,10 @@
 | 双指针 | [#344 反转字符串](https://leetcode.cn/problems/reverse-string/) | [Leetcode_344.java](code/src/main/java/gldailycode/double_point/Leetcode_344.java) | [题解](solutions/double_point/Leetcode-344-反转字符串.md) |
 | Stack | [#20 有效括号](https://leetcode.cn/problems/valid-parentheses/) | [Leetcode_20.java](code/src/main/java/gldailycode/stack/Leetcode_20.java) | [题解](solutions/stack/Leetcode-20-有效括号.md) |
 | 链表 | [#21 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | [Leetcode_21.java](code/src/main/java/gldailycode/link_list/Leetcode_21.java) | [题解](solutions/link_list/Leetcode-21-合并两个有序链表.md) |
+| 链表 | [#206 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [Leetcode_206.java](code/src/main/java/gldailycode/link_list/Leetcode_206.java) | [题解](solutions/link_list/Leetcode-206-反转链表.md) |
 | 回溯 | [#46 全排列](https://leetcode.cn/problems/permutations/) | [Leetcode_46.java](code/src/main/java/gldailycode/backtrack/Leetcode_46.java) | [题解](solutions/backtrack/Leetcode-46-全排列.md) |
 | 回溯 | [#78 子集](https://leetcode.cn/problems/subsets/) | [Leetcode_78.java](code/src/main/java/gldailycode/backtrack/Leetcode_78.java) | [题解](solutions/backtrack/Leetcode-78-子集.md) |
+| 数组 | [#53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | [Leetcode_53.java](code/src/main/java/gldailycode/array/Leetcode_53.java) | [题解](solutions/array/Leetcode-53-最大子数组和.md) |
 | 排序/区间 | [#56 合并区间](https://leetcode.cn/problems/merge-intervals/) | [Leetcode_56.java](code/src/main/java/gldailycode/greedy/Leetcode_56.java) | [题解](solutions/greedy/Leetcode-56-合并区间.md) |
 | DP | [#62 不同路径](https://leetcode.cn/problems/unique-paths/) | [Leetcode_62.java](code/src/main/java/gldailycode/dp/Leetcode_62.java) | [题解](solutions/dp/Leetcode-62-不同路径.md) |
 | DP | [#121 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [Leetcode_121.java](code/src/main/java/gldailycode/dp/Leetcode_121.java) | [题解](solutions/dp/Leetcode-121-买卖股票的最佳时机.md) |
