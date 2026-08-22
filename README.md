@@ -1,6 +1,6 @@
 # GLDailyCode
 
-日常 LeetCode 刷题记录，共 **31** 题。
+日常 LeetCode 刷题记录，共 **33** 题。
 
 | 分类 | 题目 | 实现 | 题解 |
 | --- | --- | --- | --- |
@@ -17,7 +17,9 @@
 | 回溯 | [#46 全排列](https://leetcode.cn/problems/permutations/) | [Leetcode_46.java](code/src/main/java/gldailycode/backtrack/Leetcode_46.java) | [题解](solutions/backtrack/Leetcode-46-全排列.md) |
 | 回溯 | [#78 子集](https://leetcode.cn/problems/subsets/) | [Leetcode_78.java](code/src/main/java/gldailycode/backtrack/Leetcode_78.java) | [题解](solutions/backtrack/Leetcode-78-子集.md) |
 | 数组 | [#53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | [Leetcode_53.java](code/src/main/java/gldailycode/array/Leetcode_53.java) | [题解](solutions/array/Leetcode-53-最大子数组和.md) |
+| 数组 | [#283 移动零](https://leetcode.cn/problems/move-zeroes/) | [Leetcode_283.java](code/src/main/java/gldailycode/array/Leetcode_283.java) | [题解](solutions/array/Leetcode-283-移动零.md) |
 | 排序/区间 | [#56 合并区间](https://leetcode.cn/problems/merge-intervals/) | [Leetcode_56.java](code/src/main/java/gldailycode/greedy/Leetcode_56.java) | [题解](solutions/greedy/Leetcode-56-合并区间.md) |
+| DP | [#5 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) | [Leetcode_5.java](code/src/main/java/gldailycode/dp/Leetcode_5.java) | [题解](solutions/dp/Leetcode-5-最长回文子串.md) |
 | DP | [#62 不同路径](https://leetcode.cn/problems/unique-paths/) | [Leetcode_62.java](code/src/main/java/gldailycode/dp/Leetcode_62.java) | [题解](solutions/dp/Leetcode-62-不同路径.md) |
 | DP | [#70 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | [Leetcode_70.java](code/src/main/java/gldailycode/dp/Leetcode_70.java) | [题解](solutions/dp/Leetcode-70-爬楼梯.md) |
 | DP | [#121 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [Leetcode_121.java](code/src/main/java/gldailycode/dp/Leetcode_121.java) | [题解](solutions/dp/Leetcode-121-买卖股票的最佳时机.md) |
